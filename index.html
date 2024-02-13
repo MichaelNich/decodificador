@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container__header">
+            <img src="assets/alura-logo.svg" alt="Alura Logo" class="desktop-logo">
+            <img src="assets/oracle-alura.1689860202.svg" alt="Oracle Alura logo" class="mobile-logo">
+        </div>
+    </header>
+
+    <main>
+        <div class="container__main">
+            <section class="container__input">
+                <div class="alert__box" id="alert__box">
+                    <img src="assets/bi_exclamation-circle-fill.svg" alt="Alerta">
+                    Utilize apenas letras minúsculas, sem números ou letras especiais.
+                </div>
+                <textarea placeholder="Digite o texto aqui" id="texto_entrada"></textarea>
+
+                <div class="container__input__buttons">
+                    <button onclick="criptografar()" class="buttons" id="botao__criptografar">Criptografar</button>
+                    <button onclick="descriptografar()" class="buttons"
+                        id="botao__descriptografar">Descriptografar</button>
+                </div>
+            </section>
+            <section class="container__output">
+                <div class="alert__box"></div>
+                <div class="container__output__texto">
+                    <div class="decodificador__container__output_inicial">
+                        <div id="texto_saida">
+                            <img src="assets/mensagem_nao_encontrada.svg" alt="Mensagem não encontrada"
+                                id="mensagem_nao_encontrada">
+                            <p id="mensagem_inicial_1">Nenhuma mensagem encontrada</p>
+                            <p id="mensagem_inicial_2">Digite um texto que você deseja criptografar ou descriptografar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="buttons" id="botao_copiar" onclick="copiar_texto()" disabled>Copiar
+                    Texto</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Nicolas M. Feliz</p>
+        <a href="https://www.linkedin.com/in/feliznicolas" style="color: white;">Linkedin</a>
+        <a href="https://www.github.com/michaelnich" style="color: white;">Github</a>
+        <a href="https://michaelnich.github.io/portfolio/" style="color: white;">Portfólio</a>
+    </footer>
+</body>
+
+</html>
